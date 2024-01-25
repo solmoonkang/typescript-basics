@@ -46,3 +46,19 @@ const todo2: TodoPreviewB = {
 // EXCLUDE TYPE
 
 
+// REQUIRED TYPE
+type User = {
+    firstName: string;
+    lastName?: string;
+}
+
+let firstUser: User = {
+    firstName: "John",
+}
+
+// User 타입에서 선택사항으로 만들었지만, Required로 구현하게 되면, 필수로 만들기 떄문에 에러가 발생한다.
+// let secondUser: Required<User> = {
+//     firstName: "John"
+// }
+
+

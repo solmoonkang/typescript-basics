@@ -11,4 +11,10 @@ const todo2 = {
     completed: false,
     createdAt: Date.now()
 };
-// EXCLUDE TYPE
+let firstUser = {
+    firstName: "John",
+};
+// User 타입에서 선택사항으로 만들었지만, Required로 구현하게 되면, 필수로 만들기 떄문에 에러가 발생한다.
+// let secondUser: Required<User> = {
+//     firstName: "John"
+// }
