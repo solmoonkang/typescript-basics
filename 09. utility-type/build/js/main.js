@@ -19,3 +19,8 @@ const cats = {
     boris: { age: 10, breed: 'maine coon' },
     mordred: { age: 10, breed: 'british shorthair' }
 };
+function fn(str) {
+    return str;
+}
+const a = 'Hello';
+// const b: ReturnType<typeof fn> = true;   // ERROR

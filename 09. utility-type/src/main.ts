@@ -77,3 +77,13 @@ const cats: Record<CatName, CatInfo> = {
 };
 
 
+// RETURN TYPE
+type T0 = ReturnType<() => string>;         // string
+type T1 = ReturnType<(s: string) => void>;  // void
+
+function fn(str: string) {
+    return str;
+}
+
+const a: ReturnType<typeof fn> = 'Hello';
+// const b: ReturnType<typeof fn> = true;   // ERROR
