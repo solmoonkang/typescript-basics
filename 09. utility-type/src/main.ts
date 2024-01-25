@@ -25,3 +25,24 @@ const todo: TodoPreview = {
     completed: false
 }
 
+
+// OMIT TYPE
+interface TodoB {
+    title: string;
+    description: string;
+    completed: boolean;
+    createdAt: number;
+}
+
+type TodoPreviewB = Omit<TodoB, "description">;
+
+const todo2: TodoPreviewB = {
+    title: "Clean Room",
+    completed: false,
+    createdAt: Date.now()
+}
+
+
+// EXCLUDE TYPE
+
+

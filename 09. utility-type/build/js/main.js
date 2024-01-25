@@ -6,3 +6,9 @@ const todo = {
     title: "Clean Room",
     completed: false
 };
+const todo2 = {
+    title: "Clean Room",
+    completed: false,
+    createdAt: Date.now()
+};
+// EXCLUDE TYPE
