@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
         "rootDir": "./src",
-        "outDir": "01. default-settings/build/js",
+        "outDir": "./build/js",
         "target": "ES2015",
-        "noEmitOnError": true,
+        "noEmitOnError": false,
         "module": "ESNext",
         "moduleResolution": "Node",
-        "esModuleInterop": true,
+        "esModuleInterop": true, 
         "lib": ["ESNext", "DOM"],
-        "strict": true, 
+        "strict": true,
     },
     "include": [
         "./src/**/*.ts",
