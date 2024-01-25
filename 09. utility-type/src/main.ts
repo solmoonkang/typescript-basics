@@ -62,3 +62,18 @@ let firstUser: User = {
 // }
 
 
+// RECORD TYPE
+interface CatInfo {
+    age: number;
+    breed: string;
+}
+
+type CatName = "miffy" | "boris" | "mordred";
+
+const cats: Record<CatName, CatInfo> = {
+    miffy: {age: 10, breed: 'persian'},
+    boris: {age: 10, breed: 'maine coon'},
+    mordred: {age: 10, breed: 'british shorthair'}
+};
+
+
