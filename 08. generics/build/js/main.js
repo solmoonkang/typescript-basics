@@ -30,3 +30,14 @@ const bike = {
     color: 'green',
     option: true
 };
+// Generic Example
+const makeArr = (x, y) => {
+    return [x, y];
+};
+const array7 = makeArr(4, 5);
+const array8 = makeArr("a", "b");
+// Generic Extends Example
+const makeFullName = (obj) => {
+    return Object.assign(Object.assign({}, obj), { fullName: obj.firstName + " " + obj.lastName });
+};
+makeFullName({ firstName: "John", lastName: "Doe", location: "Seoul" });

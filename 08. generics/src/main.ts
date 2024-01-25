@@ -47,3 +47,23 @@ const bike: Vehicle<boolean> = {
     color: 'green',
     option: true
 }
+
+
+
+
+// Generic Example
+const makeArr = <X, Y>(x: X, y: Y): [X, Y] => {
+    return [x, y];
+}
+
+const array7 = makeArr<number, number>(4, 5);
+const array8 = makeArr<string, string>("a", "b");
+
+
+
+// Generic Extends Example
+const makeFullName = <T extends {firstName: string, lastName: string}>(obj: T) => {
+    return {...obj, fullName: obj.firstName + " " + obj.lastName}
+}
+
+makeFullName({firstName: "John", lastName: "Doe", location: "Seoul"});
